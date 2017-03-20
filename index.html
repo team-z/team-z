@@ -8,8 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-  <script src="js/lightbox.js"></script>
   <link rel="stylesheet" type="text/css" href="css/theme_welcome.css">
+  <script src="js/wow.min.js"></script>
   <style type="text/css">
          body, html, .main {
                 height: 100%;
@@ -37,8 +37,9 @@
         }
         .navbar-default .stick{
 	      background-color: rgba(0,0,0,1);
-	      color: black;
+	      color: black;       
 }
+       .wow { visibility: hidden; }
     </style>
     <script src="js/jquery-3.1.1.min.js"></script>
 
@@ -114,21 +115,21 @@ $(document).ready(function(){
      	<div class="row">
 
           <div class="col-md-4">
-            <div class="thumbnail">
+            <div class="thumbnail wow fadeInUp">
               <div class="caption">
                 <img src="web.jpg" alt="" style="width: 100%;">
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="thumbnail">
+            <div class="thumbnail wow fadeInUp">
               <div class="caption">
                 <img src="web.jpg" alt="" style="width: 100%;">
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="thumbnail">
+            <div class="thumbnail wow fadeInUp">
               <div class="caption">
                 <img src="web.jpg" alt="" style="width: 100%;">
               </div>
@@ -146,7 +147,7 @@ $(document).ready(function(){
        <h1 style="font-family: 'Montserrat SemiBold';">Profile Member Kami :</h1><br>
        <div class="row">
          <div class="col-md-6">
-           <div class="panel panel-default">
+           <div class="panel panel-default wow fadeInUp">
              <div class="panel-body">
               <div class="row">
                <div class="col-md-3">
@@ -177,7 +178,7 @@ $(document).ready(function(){
               </div>
              </div>
            </div>
-           <div class="panel panel-default">
+           <div class="panel panel-default wow fadeInUp">
              <div class="panel-body">
               <div class="row">
                <div class="col-md-3">
@@ -201,7 +202,7 @@ $(document).ready(function(){
                   </tr>
                   <tr>
                     <td align="center">Alamat</td>
-                    <td>Kedawung</td>
+                    <td>Jl.Gucialit Desa Kedawung</td>
                   </tr>
                 </table>
                </div>
@@ -210,11 +211,12 @@ $(document).ready(function(){
            </div>
          </div>
          <div class="col-md-6">
-           <div class="panel panel-default">
+           <div class="panel panel-default wow fadeInUp">
              <div class="panel-body">
               <div class="row">
                <div class="col-md-3">
-                  <img style="border:2px solid gray;" src="web.jpg" class="img-circle" height="120" width="120" alt="">
+               <a href="web.jpg" data-lightbox="image-1">
+                  <img style="border:2px solid gray;" src="web.jpg" class="img-circle" height="120" width="120" alt=""></a>
                </div>
                <div class="col-md-9">
                 <table class="table table-striped">
@@ -239,12 +241,12 @@ $(document).ready(function(){
               </div>
              </div>
            </div>
-           <div class="panel panel-default">
+           <div class="panel panel-default wow fadeInUp">
              <div class="panel-body">
               <div class="row">
                <div class="col-md-3">
-                  <a href="yofan.jpg" data-lightbox="image-1" data-caption="Mahardika">
-                  <img src="yofan.jpg" style="border:2px solid gray;" class="img-circle" height="120" width="120" alt="">
+                  <a href="yofan.JPG" data-lightbox="image-1" data-caption="Mahardika">
+                  <img src="yofan.JPG" style="border:2px solid gray;" class="img-circle" height="120" width="120" alt="">
                </a>
                </div>
                <div class="col-md-9">
@@ -287,6 +289,10 @@ $(document).ready(function(){
         </div>
         </div>
     </nav>
+   <script src="js/wow.min.js"></script>
+   <script type="text/javascript">
+     new WOW().init();
+   </script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery-3.1.1.min.js"></script>
    <script src="js/lightbox-plus-jquery.min.js"></script>
