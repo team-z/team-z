@@ -1,4 +1,10 @@
+body, html{
+    height: 100%;
+}
 
+section {
+    min-height: 100%;
+}
 
 .navbar-default .navbar-brand{
 	color: white;
